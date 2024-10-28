@@ -725,11 +725,6 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
-[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
 local Tab = Window:MakeTab({
 	Name = "Tab 6",
 	Icon = "rbxassetid://4483345998",
@@ -778,7 +773,7 @@ Callback = <function> - The function of the button.
 
 local Tab = Window:MakeTab({
 	Name = "Tab 7",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://7734058345",
 	PremiumOnly = false
 })
 
@@ -827,7 +822,7 @@ Callback = <function> - The function of the button.
 
 local Tab = Window:MakeTab({
 	Name = "Tab 8",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://7743872929",
 	PremiumOnly = false
 })
 
@@ -857,7 +852,6 @@ loadstring(game:HttpGet("https://scriptblox.com/raw/Blox-Fruits-w-azure-hub-1011
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
-
 Tab:AddButton({
 	Name = "Redz Hub 🍒 (Blox fruit)",
 	Callback = function()
@@ -870,4 +864,3 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Blox-Fruits-RedzHub-No-Key-A
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
-
