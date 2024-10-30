@@ -2,29 +2,11 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "BaconPartnerr's Hub 🥓", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Welcome to BaconScriptsPartnerr Universal Script!"})
 
---[[
-Name = <string> - The name of the UI.
-HidePremium = <bool> - Whether or not the user details shows Premium status or not.
-SaveConfig = <bool> - Toggles the config saving in the UI.
-ConfigFolder = <string> - The name of the folder where the configs are saved.
-IntroEnabled = <bool> - Whether or not to show the intro animation.
-IntroText = <string> - Text to show in the intro animation.
-IntroIcon = <string> - URL to the image you want to use in the intro animation.
-Icon = <string> - URL to the image you want displayed on the window.
-CloseCallback = <function> - Function to execute when the window is closed.
-]]
-
 local Tab = Window:MakeTab({
 	Name = "Tab 1",
 	Icon = "rbxassetid://7733954611",
 	PremiumOnly = false
 })
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
 
 local Section = Tab:AddSection({
 	Name = "Universal Scripts"
@@ -40,13 +22,6 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
-
---[[
-Title = <string> - The title of the notification.
-Content = <string> - The content of the notification.
-Image = <string> - The icon of the notification.
-Time = <number> - The duration of the notfication.
-]]
 
 Tab:AddButton({
 	Name = "Fly Script 🕊️",
@@ -118,9 +93,6 @@ Callback = <function> - The function of the toggle.
 Tab:AddButton({
 	Name = "Godmode 🧘",
 	Callback = function()
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
 for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
 if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
 game:GetService("RunService").Heartbeat:connect(function()
@@ -149,12 +121,6 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://7743869054",
 	PremiumOnly = false
 })
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
 
 local Section = Tab:AddSection({
 	Name = "Doors"
@@ -540,22 +506,11 @@ end)
   	end    
 })
 
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
 local Tab = Window:MakeTab({
 	Name = "Tab 3",
 	Icon = "rbxassetid://7734058599",
 	PremiumOnly = false
 })
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
 
 local Section = Tab:AddSection({
 	Name = "Strongest Battlesgrounds 💪"
@@ -590,11 +545,8 @@ Callback = <function> - The function of the button.
 Tab:AddButton({
 	Name = "Phantasm Hub 👻",
 	Callback = function()
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
 getgenv().ToggleKeybind = Enum.KeyCode.RightControl
-getgenv().FreeEmotesTab = false -- if you want free emotes turn this to true
+getgenv().FreeEmotesTab = true -- if you want free emotes turn this to true
 
 --// https://discord.gg/bntsEjwnA5 (you should join forreal real....)
 
@@ -613,12 +565,6 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://7733964808",
 	PremiumOnly = false
 })
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
 
 local Section = Tab:AddSection({
 	Name = "Pet simulator 99 😺🐶"
@@ -662,12 +608,6 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://7733955664",
 	PremiumOnly = false
 })
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
 
 local Section = Tab:AddSection({
 	Name = "slap battles 👏"
@@ -731,12 +671,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-
 local Section = Tab:AddSection({
 	Name = "Blade ball 🏀"
 })
@@ -776,12 +710,6 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://7734058345",
 	PremiumOnly = false
 })
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
 
 local Section = Tab:AddSection({
 	Name = "Mm2 🔪"
@@ -859,8 +787,3 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Blox-Fruits-RedzHub-No-Key-A
       		print("button pressed")
   	end    
 })
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
