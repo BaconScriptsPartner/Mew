@@ -76,6 +76,11 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+Tab:AddButton({ Name = "Infinite Yield ♾️", Callback = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() print("button pressed") end
+})
+
+--[[ Name = - The name of the button. Callback = - The function of the button. ]]
+
 local Tab = Window:MakeTab({
 	Name = "Tab 2",
 	Icon = "rbxassetid://7743869054",
