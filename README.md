@@ -1,6 +1,7 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "BaconPartnerr's Hub 🥓", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Welcome to BaconScriptsPartnerr Universal Script!"})
+local Window = OrionLib:MakeWindow({Name = Nimdas hub
+🥓", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Welcome to Nimdas Universal Script!"})
 
 local Tab = Window:MakeTab({
 	Name = "Tab 1",
@@ -66,47 +67,6 @@ Tab:AddButton({
 	Name = "AntiLag",
 	Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/8YZ2cc6V"))()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddToggle({
-	Name = "HitBox Expander",
-	Default = false,
-	Callback = function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
-		print(Value)
-	end    
-})
-
---[[
-Name = <string> - The name of the toggle.
-Default = <bool> - The default value of the toggle.
-Callback = <function> - The function of the toggle.
-]]
-
-Tab:AddButton({
-	Name = "Godmode 🧘",
-	Callback = function()
-for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
-if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
-game:GetService("RunService").Heartbeat:connect(function()
-v.Velocity = Vector3.new(-30,0,0)
-end)
-end
-end
-
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-    Title = "Notification";
-    Text = "Netless Ran";
-    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 16;
-loadstring(game:HttpGet(('https://pastebin.com/raw/bbyuynM1'),true))()
       		print("button pressed")
   	end    
 })
