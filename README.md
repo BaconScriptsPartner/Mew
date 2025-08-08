@@ -35,11 +35,3 @@ local Tab = Window:CreateTab({
 })
 
 Tab:CreateSection("Section")
-Section:Set("universal")
-
-Tab:AddButton({
-	Name = "wall walker",
-	Callback = function()
-      		print("button pressed")
-  	end    
-})
