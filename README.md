@@ -36,7 +36,6 @@ local Tab = Window:CreateTab({
 
 Tab:CreateSection("Section")
 Section:Set("universal")
-Section:Destroy() -- Destroys the section
 
 local Button = Tab:CreateButton({
 	Name = "Wall walker",
