@@ -37,56 +37,9 @@ local Tab = Window:CreateTab({
 Tab:CreateSection("Section")
 Section:Set("universal")
 
-local Button = Tab:CreateButton({
-	Name = "Wall walker",
-	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
-    	Callback = function()
-	 loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
-         -- The function that takes place when the button is pressed
-    	end
-})
-
-local Button = Tab:CreateButton({
-	Name = "rewind time",
-	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
-    	Callback = function()	 loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/L"))() 
-         -- The function that takes place when the button is pressed
-    	end
-})
-
-local Button = Tab:CreateButton({
-	Name = "stream sniper︻デ═一",
-	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
-    	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Guest3D/ZirconHub/refs/heads/main/StreamSniper.lua"))() 
-         -- The function that takes place when the button is pressed
-    	end
-})
-
-local Button = Tab:CreateButton({
-	Name = "Anti Lag",
-	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
-    	Callback = function()
-	 loadstring(game:HttpGet("https://pastebin.com/raw/8YZ2cc6V"))()
-         -- The function that takes place when the button is pressed
-    	end
-})
-
-local Tab = Window:CreateTab({
-	Name = "tab 2",
-	Icon = "view_in_ar",
-	ImageSource = "Material",
-	ShowTitle = true -- This will determine whether the big header text in the tab will show
-})
-
-Tab:CreateSection("Section")
-Section:Set("slap battles👋")
-Section:Destroy() -- Destroys the section
-
-local Button = Tab:CreateButton({
-	Name = "Giang hub",
-	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
-    	Callback = function()	 loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua"))()
-         -- The function that takes place when the button is pressed
-    	end
+Tab:AddButton({
+	Name = "wall walker",
+	Callback = function()
+      		print("button pressed")
+  	end    
 })
