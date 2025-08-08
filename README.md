@@ -35,3 +35,13 @@ local Tab = Window:CreateTab({
 })
 
 Tab:CreateSection("Section")
+Section:Set("universal")
+Section:Destroy() -- Destroys the section
+
+local Button = Tab:CreateButton({
+	Name = "Wall walker",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         -- The function that takes place when the button is pressed
+    	end
+})
